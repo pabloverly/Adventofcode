@@ -1,0 +1,51 @@
+--- Dia 3: Reorganização da Mochila ---
+Um Elfo tem a importante tarefa de carregar todas as mochilas com suprimentos para a jornada na selva .
+ Infelizmente, aquele elfo não seguiu as instruções de embalagem e, portanto, alguns itens agora precisam ser
+  reorganizados.
+
+Cada mochila tem dois grandes compartimentos . Todos os itens de um determinado tipo devem entrar 
+exatamente em um dos dois compartimentos. O elfo que fez a embalagem falhou em seguir esta regra para exatamente 
+um tipo de item por mochila.
+
+Os Elfos fizeram uma lista de todos os itens atualmente em cada mochila (sua entrada de quebra-cabeça), mas eles precisam 
+de sua ajuda para encontrar os erros. Cada tipo de item é identificado por uma única letra minúscula ou maiúscula (ou seja, 
+ae Ase refere a diferentes tipos de itens).
+
+A lista de itens para cada mochila é fornecida como caracteres em uma única linha. Uma determinada mochila sempre tem o
+ mesmo número de itens em cada um de seus dois compartimentos, então a primeira metade dos caracteres representa os itens 
+ do primeiro compartimento, enquanto a segunda metade dos caracteres representa os itens do segundo compartimento.
+
+Por exemplo, suponha que você tenha a seguinte lista de conteúdos de seis mochilas:
+
+vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDw
+A primeira mochila contém os itens vJrwpWtwJgWrhcsFMMfFFhFp, o que significa que seu primeiro compartimento 
+contém os itens vJrwpWtwJgWr, enquanto o segundo compartimento contém os itens hcsFMMfFFhFp. O único tipo de item que
+ aparece em ambos os compartimentos é minúsculo p.
+Os compartimentos da segunda mochila contêm jqHRNqRjqzjGDLGLe rsFMfFZSrLrFZsSL. O único tipo de item que aparece em 
+ambos os compartimentos é maiúscula L.
+Os compartimentos da terceira mochila contêm PmmdzqPrVe vPwwTWBwg; o único tipo de item comum é maiúscula P.
+Os compartimentos da quarta mochila compartilham apenas o tipo de item v.
+Os compartimentos da quinta mochila compartilham apenas o tipo de item t.
+Os compartimentos da sexta mochila compartilham apenas o tipo de item s.
+Para ajudar a priorizar a reorganização de itens, cada tipo de item pode ser convertido em uma prioridade :
+
+Tipos ade itens em minúsculas ztêm prioridades de 1 a 26.
+Tipos de itens em letras maiúsculas Atêm Zprioridades de 27 a 52.
+No exemplo acima, 
+a prioridade do tipo de item que aparece nos dois compartimentos de cada mochila é 
+16 ( p), 
+38 ( L), 
+42 ( P), 
+22 ( v), 
+20 ( t) 
+19 ( s); a soma destes é 157.
+
+Encontre o tipo de item que aparece em ambos os compartimentos de cada mochila. Qual é a soma das prioridades 
+desses tipos de itens?
+
+Para começar, obtenha sua entrada de quebra-cabeça .
