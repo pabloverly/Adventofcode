@@ -6,15 +6,6 @@ pub fn dia_tres(){
     
     let mut result: Vec<&str> = contents
     .split("\n\n")
-    .map(|block| 
-        block
-        .split('\n')
-        .filter(|item| !item.is_empty() )
-        // .map(|item| item.parse::<u32>().unwrap())
-        .sum::<u32>()
-    )
-    // .max()
-    // .unwrap();
     .collect();
     
 
